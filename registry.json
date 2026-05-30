@@ -3,6 +3,8 @@
   "description": "Normalized SVG icon registry for CDN references in architecture diagrams.",
   "repository": "https://github.com/g-kannan/archicons",
   "branch": "main",
+  "baseUrl": "https://archicons.oltpdba.workers.dev/",
+  "registryUrl": "https://archicons.oltpdba.workers.dev/registry.json",
   "cdnBaseUrl": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/",
   "iconCount": 52,
   "icons": [
@@ -13,9 +15,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-appflow.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-appflow.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-appflow.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-appflow.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-appflow.svg"
     },
     {
       "id": "aws.amazon-athena",
@@ -24,9 +28,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-athena.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-athena.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-athena.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-athena.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-athena.svg"
     },
     {
       "id": "aws.amazon-bedrock-agentcore",
@@ -35,9 +41,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-bedrock-agentcore.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-bedrock-agentcore.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-bedrock-agentcore.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-bedrock-agentcore.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-bedrock-agentcore.svg"
     },
     {
       "id": "aws.amazon-bedrock",
@@ -46,9 +54,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-bedrock.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-bedrock.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-bedrock.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-bedrock.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-bedrock.svg"
     },
     {
       "id": "aws.amazon-ec2",
@@ -57,9 +67,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-ec2.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-ec2.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-ec2.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-ec2.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-ec2.svg"
     },
     {
       "id": "aws.amazon-elastic-container-registry",
@@ -68,9 +80,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-elastic-container-registry.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-elastic-container-registry.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-elastic-container-registry.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-elastic-container-registry.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-elastic-container-registry.svg"
     },
     {
       "id": "aws.amazon-elastic-container-service",
@@ -79,9 +93,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-elastic-container-service.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-elastic-container-service.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-elastic-container-service.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-elastic-container-service.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-elastic-container-service.svg"
     },
     {
       "id": "aws.amazon-elastic-kubernetes-service",
@@ -90,9 +106,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-elastic-kubernetes-service.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-elastic-kubernetes-service.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-elastic-kubernetes-service.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-elastic-kubernetes-service.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-elastic-kubernetes-service.svg"
     },
     {
       "id": "aws.amazon-emr",
@@ -101,9 +119,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-emr.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-emr.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-emr.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-emr.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-emr.svg"
     },
     {
       "id": "aws.amazon-eventbridge",
@@ -112,9 +132,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-eventbridge.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-eventbridge.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-eventbridge.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-eventbridge.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-eventbridge.svg"
     },
     {
       "id": "aws.amazon-rds",
@@ -123,9 +145,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-rds.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-rds.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-rds.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-rds.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-rds.svg"
     },
     {
       "id": "aws.amazon-redshift",
@@ -134,9 +158,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-redshift.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-redshift.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-redshift.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-redshift.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-redshift.svg"
     },
     {
       "id": "aws.amazon-rekognition",
@@ -145,9 +171,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-rekognition.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-rekognition.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-rekognition.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-rekognition.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-rekognition.svg"
     },
     {
       "id": "aws.amazon-sagemaker-ai",
@@ -156,9 +184,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-sagemaker-ai.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-sagemaker-ai.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-sagemaker-ai.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-sagemaker-ai.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-sagemaker-ai.svg"
     },
     {
       "id": "aws.amazon-sagemaker",
@@ -167,9 +197,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-sagemaker.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-sagemaker.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-sagemaker.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-sagemaker.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-sagemaker.svg"
     },
     {
       "id": "aws.amazon-simple-notification-service",
@@ -178,9 +210,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-simple-notification-service.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-simple-notification-service.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-simple-notification-service.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-simple-notification-service.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-simple-notification-service.svg"
     },
     {
       "id": "aws.amazon-simple-storage-service",
@@ -189,9 +223,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-simple-storage-service.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-simple-storage-service.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-simple-storage-service.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-simple-storage-service.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-simple-storage-service.svg"
     },
     {
       "id": "aws.amazon-textract",
@@ -200,9 +236,11 @@
       "category": "aws",
       "path": "icons/aws/amazon-textract.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-textract.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-textract.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-textract.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/amazon-textract.svg"
     },
     {
       "id": "aws.aws-cloud-logo",
@@ -211,9 +249,11 @@
       "category": "aws",
       "path": "icons/aws/aws-cloud-logo.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-cloud-logo.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-cloud-logo.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-cloud-logo.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-cloud-logo.svg"
     },
     {
       "id": "aws.aws-fargate",
@@ -222,9 +262,11 @@
       "category": "aws",
       "path": "icons/aws/aws-fargate.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-fargate.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-fargate.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-fargate.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-fargate.svg"
     },
     {
       "id": "aws.aws-glue",
@@ -233,9 +275,11 @@
       "category": "aws",
       "path": "icons/aws/aws-glue.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-glue.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-glue.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-glue.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-glue.svg"
     },
     {
       "id": "aws.aws-identity-and-access-management",
@@ -244,9 +288,11 @@
       "category": "aws",
       "path": "icons/aws/aws-identity-and-access-management.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-identity-and-access-management.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-identity-and-access-management.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-identity-and-access-management.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-identity-and-access-management.svg"
     },
     {
       "id": "aws.aws-key-management-service",
@@ -255,9 +301,11 @@
       "category": "aws",
       "path": "icons/aws/aws-key-management-service.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-key-management-service.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-key-management-service.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-key-management-service.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-key-management-service.svg"
     },
     {
       "id": "aws.aws-lake-formation",
@@ -266,9 +314,11 @@
       "category": "aws",
       "path": "icons/aws/aws-lake-formation.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-lake-formation.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-lake-formation.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-lake-formation.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-lake-formation.svg"
     },
     {
       "id": "aws.aws-lambda",
@@ -277,9 +327,11 @@
       "category": "aws",
       "path": "icons/aws/aws-lambda.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-lambda.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-lambda.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-lambda.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-lambda.svg"
     },
     {
       "id": "aws.aws-secrets-manager",
@@ -288,9 +340,11 @@
       "category": "aws",
       "path": "icons/aws/aws-secrets-manager.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-secrets-manager.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-secrets-manager.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-secrets-manager.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-secrets-manager.svg"
     },
     {
       "id": "aws.aws-step-functions",
@@ -299,9 +353,11 @@
       "category": "aws",
       "path": "icons/aws/aws-step-functions.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-step-functions.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-step-functions.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-step-functions.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-step-functions.svg"
     },
     {
       "id": "aws.aws-transfer-family",
@@ -310,9 +366,11 @@
       "category": "aws",
       "path": "icons/aws/aws-transfer-family.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/aws/aws-transfer-family.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-transfer-family.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-transfer-family.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/aws/aws-transfer-family.svg"
     },
     {
       "id": "azure.azure-database-migration-services",
@@ -321,9 +379,11 @@
       "category": "azure",
       "path": "icons/azure/azure-database-migration-services.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/azure-database-migration-services.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/azure-database-migration-services.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/azure-database-migration-services.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/azure-database-migration-services.svg"
     },
     {
       "id": "azure.azure-database-postgresql-server-group",
@@ -332,9 +392,11 @@
       "category": "azure",
       "path": "icons/azure/azure-database-postgresql-server-group.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/azure-database-postgresql-server-group.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/azure-database-postgresql-server-group.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/azure-database-postgresql-server-group.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/azure-database-postgresql-server-group.svg"
     },
     {
       "id": "azure.azure-sql",
@@ -343,9 +405,11 @@
       "category": "azure",
       "path": "icons/azure/azure-sql.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/azure-sql.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/azure-sql.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/azure-sql.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/azure-sql.svg"
     },
     {
       "id": "azure.container-instances",
@@ -354,9 +418,11 @@
       "category": "azure",
       "path": "icons/azure/container-instances.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/container-instances.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/container-instances.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/container-instances.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/container-instances.svg"
     },
     {
       "id": "azure.data-factories",
@@ -365,9 +431,11 @@
       "category": "azure",
       "path": "icons/azure/data-factories.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/data-factories.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/data-factories.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/data-factories.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/data-factories.svg"
     },
     {
       "id": "azure.function-apps",
@@ -376,9 +444,11 @@
       "category": "azure",
       "path": "icons/azure/function-apps.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/function-apps.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/function-apps.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/function-apps.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/function-apps.svg"
     },
     {
       "id": "azure.power-bi-embedded",
@@ -387,9 +457,11 @@
       "category": "azure",
       "path": "icons/azure/power-bi-embedded.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/power-bi-embedded.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/power-bi-embedded.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/power-bi-embedded.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/power-bi-embedded.svg"
     },
     {
       "id": "azure.power-platform",
@@ -398,9 +470,11 @@
       "category": "azure",
       "path": "icons/azure/power-platform.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/power-platform.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/power-platform.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/power-platform.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/power-platform.svg"
     },
     {
       "id": "azure.storage-accounts",
@@ -409,9 +483,11 @@
       "category": "azure",
       "path": "icons/azure/storage-accounts.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/storage-accounts.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/storage-accounts.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/storage-accounts.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/storage-accounts.svg"
     },
     {
       "id": "azure.virtual-machine",
@@ -420,9 +496,11 @@
       "category": "azure",
       "path": "icons/azure/virtual-machine.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/azure/virtual-machine.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/virtual-machine.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/virtual-machine.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/azure/virtual-machine.svg"
     },
     {
       "id": "data-platforms.databricks",
@@ -431,9 +509,11 @@
       "category": "data-platforms",
       "path": "icons/data-platforms/databricks.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/data-platforms/databricks.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/data-platforms/databricks.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/data-platforms/databricks.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/data-platforms/databricks.svg"
     },
     {
       "id": "data-platforms.snowflake",
@@ -442,9 +522,11 @@
       "category": "data-platforms",
       "path": "icons/data-platforms/snowflake.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/data-platforms/snowflake.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/data-platforms/snowflake.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/data-platforms/snowflake.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/data-platforms/snowflake.svg"
     },
     {
       "id": "gcp.apigee",
@@ -453,9 +535,11 @@
       "category": "gcp",
       "path": "icons/gcp/apigee.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/apigee.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/apigee.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/apigee.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/apigee.svg"
     },
     {
       "id": "gcp.bigquery",
@@ -464,9 +548,11 @@
       "category": "gcp",
       "path": "icons/gcp/bigquery.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/bigquery.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/bigquery.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/bigquery.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/bigquery.svg"
     },
     {
       "id": "gcp.cloud-run",
@@ -475,9 +561,11 @@
       "category": "gcp",
       "path": "icons/gcp/cloud-run.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/cloud-run.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/cloud-run.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/cloud-run.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/cloud-run.svg"
     },
     {
       "id": "gcp.cloud-sql",
@@ -486,9 +574,11 @@
       "category": "gcp",
       "path": "icons/gcp/cloud-sql.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/cloud-sql.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/cloud-sql.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/cloud-sql.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/cloud-sql.svg"
     },
     {
       "id": "gcp.cloud-storage",
@@ -497,9 +587,11 @@
       "category": "gcp",
       "path": "icons/gcp/cloud-storage.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/cloud-storage.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/cloud-storage.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/cloud-storage.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/cloud-storage.svg"
     },
     {
       "id": "gcp.compute-engine",
@@ -508,9 +600,11 @@
       "category": "gcp",
       "path": "icons/gcp/compute-engine.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/compute-engine.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/compute-engine.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/compute-engine.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/compute-engine.svg"
     },
     {
       "id": "gcp.datastream",
@@ -519,9 +613,11 @@
       "category": "gcp",
       "path": "icons/gcp/datastream.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/datastream.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/datastream.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/datastream.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/datastream.svg"
     },
     {
       "id": "gcp.gke",
@@ -530,9 +626,11 @@
       "category": "gcp",
       "path": "icons/gcp/gke.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/gke.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/gke.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/gke.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/gke.svg"
     },
     {
       "id": "gcp.google-cloud",
@@ -541,9 +639,11 @@
       "category": "gcp",
       "path": "icons/gcp/google-cloud.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/google-cloud.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/google-cloud.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/google-cloud.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/google-cloud.svg"
     },
     {
       "id": "gcp.looker",
@@ -552,9 +652,11 @@
       "category": "gcp",
       "path": "icons/gcp/looker.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/looker.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/looker.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/looker.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/looker.svg"
     },
     {
       "id": "gcp.pub-sub",
@@ -563,9 +665,11 @@
       "category": "gcp",
       "path": "icons/gcp/pub-sub.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/pub-sub.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/pub-sub.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/pub-sub.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/pub-sub.svg"
     },
     {
       "id": "gcp.vertex-ai",
@@ -574,9 +678,11 @@
       "category": "gcp",
       "path": "icons/gcp/vertex-ai.svg",
       "cdn": {
+        "hosted": "https://archicons.oltpdba.workers.dev/icons/gcp/vertex-ai.svg",
         "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/vertex-ai.svg",
         "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/vertex-ai.svg"
-      }
+      },
+      "url": "https://archicons.oltpdba.workers.dev/icons/gcp/vertex-ai.svg"
     }
   ]
 }

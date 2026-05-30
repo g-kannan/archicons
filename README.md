@@ -5,20 +5,20 @@ Normalized SVG icon assets for CDN references in architecture diagrams.
 ## CDN usage
 
 Icons are stored with lowercase kebab-case filenames under `icons/<category>/`.
-Use jsDelivr for stable diagram references:
+Use the hosted registry for stable diagram references:
 
 ```text
-https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/<category>/<icon>.svg
+https://archicons.oltpdba.workers.dev/registry.json
 ```
 
-Example:
+Each registry entry includes a ready-to-use hosted icon URL:
 
 ```text
-https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-lambda.svg
+https://archicons.oltpdba.workers.dev/icons/aws/aws-lambda.svg
 ```
 
-Raw GitHub URLs are also included in `registry.json` for tools that prefer
-`raw.githubusercontent.com`.
+jsDelivr and raw GitHub URLs are also included in `registry.json` for tools
+that prefer those sources.
 
 ## Registry
 
@@ -30,13 +30,15 @@ entry includes:
 - `provider`: Human-readable provider group
 - `category`: Folder name under `icons/`
 - `path`: Repository-relative SVG path
+- `url`: Ready-to-use hosted SVG URL
 - `cdn.jsdelivr`: jsDelivr CDN URL
+- `cdn.hosted`: Hosted SVG URL on `archicons.oltpdba.workers.dev`
 - `cdn.raw`: Raw GitHub URL
 
 Registry URL:
 
 ```text
-https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/registry.json
+https://archicons.oltpdba.workers.dev/registry.json
 ```
 
 ## Naming convention
