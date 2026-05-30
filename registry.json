@@ -1,0 +1,582 @@
+{
+  "name": "archicons",
+  "description": "Normalized SVG icon registry for CDN references in architecture diagrams.",
+  "repository": "https://github.com/g-kannan/archicons",
+  "branch": "main",
+  "cdnBaseUrl": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/",
+  "iconCount": 52,
+  "icons": [
+    {
+      "id": "aws.amazon-appflow",
+      "name": "Amazon AppFlow",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-appflow.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-appflow.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-appflow.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-athena",
+      "name": "Amazon Athena",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-athena.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-athena.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-athena.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-bedrock-agentcore",
+      "name": "Amazon Bedrock AgentCore",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-bedrock-agentcore.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-bedrock-agentcore.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-bedrock-agentcore.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-bedrock",
+      "name": "Amazon Bedrock",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-bedrock.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-bedrock.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-bedrock.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-ec2",
+      "name": "Amazon EC2",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-ec2.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-ec2.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-ec2.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-elastic-container-registry",
+      "name": "Amazon Elastic Container Registry",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-elastic-container-registry.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-elastic-container-registry.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-elastic-container-registry.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-elastic-container-service",
+      "name": "Amazon Elastic Container Service",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-elastic-container-service.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-elastic-container-service.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-elastic-container-service.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-elastic-kubernetes-service",
+      "name": "Amazon Elastic Kubernetes Service",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-elastic-kubernetes-service.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-elastic-kubernetes-service.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-elastic-kubernetes-service.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-emr",
+      "name": "Amazon EMR",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-emr.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-emr.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-emr.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-eventbridge",
+      "name": "Amazon EventBridge",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-eventbridge.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-eventbridge.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-eventbridge.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-rds",
+      "name": "Amazon RDS",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-rds.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-rds.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-rds.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-redshift",
+      "name": "Amazon Redshift",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-redshift.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-redshift.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-redshift.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-rekognition",
+      "name": "Amazon Rekognition",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-rekognition.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-rekognition.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-rekognition.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-sagemaker-ai",
+      "name": "Amazon SageMaker AI",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-sagemaker-ai.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-sagemaker-ai.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-sagemaker-ai.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-sagemaker",
+      "name": "Amazon SageMaker",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-sagemaker.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-sagemaker.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-sagemaker.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-simple-notification-service",
+      "name": "Amazon Simple Notification Service",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-simple-notification-service.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-simple-notification-service.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-simple-notification-service.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-simple-storage-service",
+      "name": "Amazon Simple Storage Service",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-simple-storage-service.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-simple-storage-service.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-simple-storage-service.svg"
+      }
+    },
+    {
+      "id": "aws.amazon-textract",
+      "name": "Amazon Textract",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/amazon-textract.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/amazon-textract.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/amazon-textract.svg"
+      }
+    },
+    {
+      "id": "aws.aws-cloud-logo",
+      "name": "AWS Cloud Logo",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-cloud-logo.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-cloud-logo.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-cloud-logo.svg"
+      }
+    },
+    {
+      "id": "aws.aws-fargate",
+      "name": "AWS Fargate",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-fargate.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-fargate.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-fargate.svg"
+      }
+    },
+    {
+      "id": "aws.aws-glue",
+      "name": "AWS Glue",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-glue.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-glue.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-glue.svg"
+      }
+    },
+    {
+      "id": "aws.aws-identity-and-access-management",
+      "name": "AWS Identity and Access Management",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-identity-and-access-management.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-identity-and-access-management.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-identity-and-access-management.svg"
+      }
+    },
+    {
+      "id": "aws.aws-key-management-service",
+      "name": "AWS Key Management Service",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-key-management-service.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-key-management-service.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-key-management-service.svg"
+      }
+    },
+    {
+      "id": "aws.aws-lake-formation",
+      "name": "AWS Lake Formation",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-lake-formation.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-lake-formation.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-lake-formation.svg"
+      }
+    },
+    {
+      "id": "aws.aws-lambda",
+      "name": "AWS Lambda",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-lambda.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-lambda.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-lambda.svg"
+      }
+    },
+    {
+      "id": "aws.aws-secrets-manager",
+      "name": "AWS Secrets Manager",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-secrets-manager.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-secrets-manager.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-secrets-manager.svg"
+      }
+    },
+    {
+      "id": "aws.aws-step-functions",
+      "name": "AWS Step Functions",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-step-functions.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-step-functions.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-step-functions.svg"
+      }
+    },
+    {
+      "id": "aws.aws-transfer-family",
+      "name": "AWS Transfer Family",
+      "provider": "AWS",
+      "category": "aws",
+      "path": "icons/aws/aws-transfer-family.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/aws/aws-transfer-family.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/aws/aws-transfer-family.svg"
+      }
+    },
+    {
+      "id": "azure.azure-database-migration-services",
+      "name": "Azure Database Migration Services",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/azure-database-migration-services.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/azure-database-migration-services.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/azure-database-migration-services.svg"
+      }
+    },
+    {
+      "id": "azure.azure-database-postgresql-server-group",
+      "name": "Azure Database for PostgreSQL Server Group",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/azure-database-postgresql-server-group.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/azure-database-postgresql-server-group.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/azure-database-postgresql-server-group.svg"
+      }
+    },
+    {
+      "id": "azure.azure-sql",
+      "name": "Azure SQL",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/azure-sql.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/azure-sql.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/azure-sql.svg"
+      }
+    },
+    {
+      "id": "azure.container-instances",
+      "name": "Container Instances",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/container-instances.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/container-instances.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/container-instances.svg"
+      }
+    },
+    {
+      "id": "azure.data-factories",
+      "name": "Data Factories",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/data-factories.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/data-factories.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/data-factories.svg"
+      }
+    },
+    {
+      "id": "azure.function-apps",
+      "name": "Function Apps",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/function-apps.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/function-apps.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/function-apps.svg"
+      }
+    },
+    {
+      "id": "azure.power-bi-embedded",
+      "name": "Power BI Embedded",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/power-bi-embedded.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/power-bi-embedded.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/power-bi-embedded.svg"
+      }
+    },
+    {
+      "id": "azure.power-platform",
+      "name": "Power Platform",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/power-platform.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/power-platform.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/power-platform.svg"
+      }
+    },
+    {
+      "id": "azure.storage-accounts",
+      "name": "Storage Accounts",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/storage-accounts.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/storage-accounts.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/storage-accounts.svg"
+      }
+    },
+    {
+      "id": "azure.virtual-machine",
+      "name": "Virtual Machine",
+      "provider": "Microsoft Azure",
+      "category": "azure",
+      "path": "icons/azure/virtual-machine.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/azure/virtual-machine.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/azure/virtual-machine.svg"
+      }
+    },
+    {
+      "id": "data-platforms.databricks",
+      "name": "Databricks",
+      "provider": "Data Platforms",
+      "category": "data-platforms",
+      "path": "icons/data-platforms/databricks.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/data-platforms/databricks.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/data-platforms/databricks.svg"
+      }
+    },
+    {
+      "id": "data-platforms.snowflake",
+      "name": "Snowflake",
+      "provider": "Data Platforms",
+      "category": "data-platforms",
+      "path": "icons/data-platforms/snowflake.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/data-platforms/snowflake.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/data-platforms/snowflake.svg"
+      }
+    },
+    {
+      "id": "gcp.apigee",
+      "name": "Apigee",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/apigee.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/apigee.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/apigee.svg"
+      }
+    },
+    {
+      "id": "gcp.bigquery",
+      "name": "BigQuery",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/bigquery.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/bigquery.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/bigquery.svg"
+      }
+    },
+    {
+      "id": "gcp.cloud-run",
+      "name": "Cloud Run",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/cloud-run.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/cloud-run.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/cloud-run.svg"
+      }
+    },
+    {
+      "id": "gcp.cloud-sql",
+      "name": "Cloud SQL",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/cloud-sql.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/cloud-sql.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/cloud-sql.svg"
+      }
+    },
+    {
+      "id": "gcp.cloud-storage",
+      "name": "Cloud Storage",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/cloud-storage.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/cloud-storage.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/cloud-storage.svg"
+      }
+    },
+    {
+      "id": "gcp.compute-engine",
+      "name": "Compute Engine",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/compute-engine.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/compute-engine.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/compute-engine.svg"
+      }
+    },
+    {
+      "id": "gcp.datastream",
+      "name": "Datastream",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/datastream.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/datastream.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/datastream.svg"
+      }
+    },
+    {
+      "id": "gcp.gke",
+      "name": "Google Kubernetes Engine",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/gke.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/gke.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/gke.svg"
+      }
+    },
+    {
+      "id": "gcp.google-cloud",
+      "name": "Google Cloud",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/google-cloud.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/google-cloud.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/google-cloud.svg"
+      }
+    },
+    {
+      "id": "gcp.looker",
+      "name": "Looker",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/looker.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/looker.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/looker.svg"
+      }
+    },
+    {
+      "id": "gcp.pub-sub",
+      "name": "Pub/Sub",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/pub-sub.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/pub-sub.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/pub-sub.svg"
+      }
+    },
+    {
+      "id": "gcp.vertex-ai",
+      "name": "Vertex AI",
+      "provider": "Google Cloud",
+      "category": "gcp",
+      "path": "icons/gcp/vertex-ai.svg",
+      "cdn": {
+        "jsdelivr": "https://cdn.jsdelivr.net/gh/g-kannan/archicons@main/icons/gcp/vertex-ai.svg",
+        "raw": "https://raw.githubusercontent.com/g-kannan/archicons/main/icons/gcp/vertex-ai.svg"
+      }
+    }
+  ]
+}
