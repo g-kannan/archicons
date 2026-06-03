@@ -11,6 +11,12 @@ Use the hosted registry for stable diagram references:
 https://archicons.oltpdba.workers.dev/registry.json
 ```
 
+The architecture diagram generation guide is hosted alongside the registry:
+
+```text
+https://archicons.oltpdba.workers.dev/architecture_diagram_guide.md
+```
+
 Each registry entry includes a ready-to-use hosted icon URL:
 
 ```text
@@ -39,6 +45,12 @@ Registry URL:
 
 ```text
 https://archicons.oltpdba.workers.dev/registry.json
+```
+
+Guide URL:
+
+```text
+https://archicons.oltpdba.workers.dev/architecture_diagram_guide.md
 ```
 
 ## Naming convention

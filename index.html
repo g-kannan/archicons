@@ -157,7 +157,7 @@
 
     .details {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
       margin-top: 34px;
     }
@@ -231,6 +231,7 @@
         </p>
         <div class="actions">
           <a class="button primary" href="./registry.json">Open registry</a>
+          <a class="button" href="./architecture_diagram_guide.md">Open guide</a>
           <a class="button" href="https://github.com/g-kannan/archicons">View repository</a>
         </div>
       </div>
@@ -263,6 +264,10 @@
       <article class="detail">
         <h2>Tool friendly</h2>
         <p>Each entry has a stable ID, display name, provider, category, and path.</p>
+      </article>
+      <article class="detail">
+        <h2>Diagram guide</h2>
+        <p>The hosted markdown guide keeps architecture diagram prompts aligned with the icon registry.</p>
       </article>
     </section>
 
