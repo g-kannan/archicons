@@ -56,8 +56,7 @@ Expose styling through CSS custom properties instead of hardcoded values:
   --warning: #B45309;
   --success: #047857;
   --radius: 12px;
-  --node-width: 210px;
-  --node-height: 120px;
+  --font: Arial, system-ui, sans-serif;
   --flow-speed: 1.2s;
 }
 ```
@@ -73,6 +72,20 @@ Avoid:
 - One-color themes where everything is a variation of the same hue, unless the user explicitly asks for monochrome
 
 If a dark theme is explicitly requested, still keep labels high-contrast and avoid letting saturated primary or accent colors dominate every surface.
+
+## Font Handling
+
+Keep generated files self-contained. Do not use `@import`, hosted font URLs, `<link>` font stylesheets, or external font files.
+
+If the user specifies a custom font, store it in `--font` with a system fallback stack, for example:
+
+```css
+:root {
+  --font: "DM Sans", Arial, system-ui, sans-serif;
+}
+```
+
+For a fully self-contained file, either embed a provided font as a base64 `data:` URI inside the same `<style>` block or rely on the fallback stack. External font imports can fail offline and can make exported SVG incomplete.
 
 ## Input Options
 
@@ -158,6 +171,38 @@ const diagram = {
 };
 ```
 
+## Authoring Strategy
+
+Choose one SVG authoring pattern and keep identifiers consistent.
+
+Pattern A - Static SVG plus data binding is recommended for complex, irregular, annotated, or swimlane layouts. Write the SVG markup directly, store metadata in `const nodes = {}` and `const connections = []`, and bind interactions by matching each SVG group's `data-node` value to a metadata key.
+
+Pattern B - Data-driven SVG generation is recommended for uniform grids, timelines, or repeated components. Define node and connection arrays first, compute positions with JavaScript constants, and create SVG elements with `document.createElementNS`.
+
+```js
+const NODE_W = 160;
+const NODE_H = 90;
+const COL_GAP = 80;
+const ROW_Y = [120, 310, 500];
+
+nodes.forEach((node, index) => {
+  const x = 88 + index * (NODE_W + COL_GAP);
+  const y = ROW_Y[node.lane];
+  const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  group.setAttribute("class", "node");
+  group.setAttribute("data-node", node.id);
+  group.setAttribute("tabindex", "0");
+  group.setAttribute("role", "button");
+  group.innerHTML = `
+    <rect class="node-card" x="${x}" y="${y}" width="${NODE_W}" height="${NODE_H}" rx="12"></rect>
+    <text class="node-title" x="${x + 18}" y="${y + 32}">${node.title}</text>
+  `;
+  svg.appendChild(group);
+});
+```
+
+For generated SVG, keep node dimensions as JavaScript numbers such as `NODE_W` and `NODE_H`. Do not put node width or height tokens in CSS unless they are only used for HTML layout outside the SVG.
+
 ## Layout
 
 Use the orientation requested by the user. If no orientation is supplied, use a left-to-right flow for both data flow and process flow diagrams.
@@ -210,6 +255,41 @@ For non-left-to-right orientations, transpose these rules:
 - Right-to-left: sources or start states go at the right only when the user explicitly requests that reading direction.
 - Bottom-to-top: use only when explicitly requested or when matching a provided visual convention.
 
+## Swimlane Layout
+
+Use swimlanes when ownership, actors, environments, phases, or handoffs are central to the diagram.
+
+For left-to-right swimlane diagrams:
+- Reserve a left label column of about `80px`.
+- Start diagram content at `x = 88`.
+- Use alternating lane fills such as `--surface` and a very light tint of `--page-bg`.
+- Draw subtle dashed divider lines between lanes.
+- Center lane labels vertically, rotated only when it improves space usage.
+
+```html
+<rect class="lane-fill" x="24" y="28" width="1072" height="180" rx="10"></rect>
+<line class="lane-divider" x1="24" y1="208" x2="1096" y2="208"></line>
+<text class="lane-label" x="44" y="118" transform="rotate(-90, 44, 118)">Operations</text>
+```
+
+```css
+.lane-divider {
+  stroke: var(--line);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+```
+
+For a standard 3-lane left-to-right diagram with a `640px` viewBox height:
+
+| Lane | Y start | Y end | Center Y | Fill |
+|------|---------|-------|----------|------|
+| Lane 1 | 28 | 208 | 118 | `--surface` |
+| Lane 2 | 208 | 418 | 313 | tinted `--page-bg` |
+| Lane 3 | 418 | 612 | 515 | `--surface` |
+
+Place each node so `lane_y_start + 16 <= node_y <= lane_y_end - NODE_H - 16`, using the actual SVG node height constant or numeric value.
+
 ## Component Design
 
 Each component or process step must be an SVG group containing:
@@ -220,6 +300,10 @@ Each component or process step must be an SVG group containing:
 
 Use a consistent component size unless the content requires otherwise.
 Use input-provided sizing and density when available. Otherwise calculate node dimensions from label length, number of lines, and diagram density.
+
+Set SVG geometry as attributes, not CSS rules. Do not place `rx`, `ry`, `cx`, `cy`, `r`, `x`, `y`, `width`, or `height` in CSS classes. Put those values directly on SVG elements; reserve CSS for visual properties such as fill, stroke, opacity, filter, transition, and cursor.
+
+Prefer explicit `x` and `y` text coordinates for export compatibility. If vertical text alignment is required, set `dominant-baseline="middle"` as an inline SVG attribute instead of relying on a CSS class.
 
 For process flow diagrams, use these node semantics:
 - `start`: rounded rectangle or pill-like rounded rectangle
@@ -303,16 +387,38 @@ Recommended pattern:
 
 ```html
 <defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M 0 0 L 10 5 L 0 10 z"></path>
+  <marker id="arr-default" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#AAB4C3"></path>
+  </marker>
+  <marker id="arr-primary" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#0F766E"></path>
+  </marker>
+  <marker id="arr-related" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#2563EB"></path>
   </marker>
 </defs>
 
-<path class="flow-line" d="M290 240 C340 240 350 240 400 240" marker-end="url(#arrow)"></path>
-<path class="flow-line-active" d="M290 240 C340 240 350 240 400 240"></path>
+<g class="connection" data-from="ingest" data-to="review">
+  <path class="flow-line" d="M290 240 C340 240 350 240 400 240" marker-end="url(#arr-default)"></path>
+  <path class="flow-line-active" d="M290 240 C340 240 350 240 400 240"></path>
+  <rect class="conn-label-bg" x="330" y="226" width="52" height="18" rx="4"></rect>
+  <text class="conn-label" x="356" y="239">Payload</text>
+</g>
 ```
 
 Use cubic Bezier paths for clean horizontal routing by default. If the user requests orthogonal, straight, swimlane-style, or timeline routing, use that routing instead. Avoid crossing lines where possible.
+
+SVG marker fill is effectively static for interaction state. Define separate markers for default, primary, related, exception, or muted states, then swap the `marker-end` attribute in JavaScript when a node becomes active.
+
+Connector labels and label backgrounds must be children of the same `<g class="connection">` as their paths so active and dimmed connection styling applies to the whole connection.
+
+```css
+.connection:not(.is-related) .conn-label,
+.connection:not(.is-related) .conn-label-bg {
+  opacity: 0.35;
+  transition: opacity 0.2s;
+}
+```
 
 For process flow:
 - Use connector labels for decisions and branch outcomes.
@@ -323,6 +429,12 @@ For process flow:
 For data flow:
 - Label flows with payload or protocol when useful, such as `Events`, `Parquet`, `REST`, `CDC`, or `Aggregates`.
 - Use line style to distinguish batch, stream, control, and error flows if the distinction matters.
+
+For cross-lane routing:
+- Use drop-and-enter paths for forward handoffs into a lower lane: exit the source node, travel to the lane boundary, move horizontally, then enter the target node.
+- Use loop-back paths for retries or feedback: route below the active lanes or through a reserved feedback corridor and use a dashed stroke.
+- Use elbow paths when routing around other nodes, keeping at least `16px` clearance from nodes and lane boundaries.
+- When a connection crosses a lane boundary, place a short connector label inside the connection group near the divider to identify the handoff.
 
 ## Annotations
 
@@ -602,7 +714,7 @@ function downloadSVG() {
 ```
 
 Export preflight before final output:
-- Search the generated HTML for external references: `<image`, `href="http`, `src="http`, `xlink:href="http`, `<script src=`, `<link`, `@import`, and `url(http`
+- Search the generated HTML for external references: `<image`, `href="http`, `src="http`, `xlink:href="http`, `<script src=`, `<link`, `@import`, `@import url(`, `url(http`, and `fonts.googleapis`
 - If any are present, replace them with inline HTML, CSS, SVG, or vanilla JavaScript
 - For export-enabled diagrams, `document.querySelectorAll("svg image").length` should be `0`
 - Confirm there are no external scripts or stylesheets
@@ -633,6 +745,10 @@ Before finalizing, inspect the HTML for:
 - `mermaid`
 - `<link rel="stylesheet"`
 - `<image`
+- `@import`
+- `href="http`
+- `src="http`
+- `url(http`
 
 Also inspect external scripts:
 - Remove all `<script src=...>` tags.
