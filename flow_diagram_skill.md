@@ -29,7 +29,9 @@ All diagram visuals, components, process steps, decision points, connectors, arr
 
 Treat visual style as input-driven. Honor any user-provided theme, brand colors, font, density, layout direction, annotation style, and alignment requirements.
 
-If the user does not provide styling inputs, default to a light theme with a polished consulting presentation style:
+Default to a light flow diagram canvas unless the user explicitly asks for a dark theme.
+
+If the user does not provide styling inputs, use a light theme with a polished consulting presentation style:
 - Page background: `#F7F8FC`
 - Diagram surface: `#FFFFFF`
 - Component fill: white or very light tinted fills
@@ -62,11 +64,15 @@ Expose styling through CSS custom properties instead of hardcoded values:
 
 Avoid:
 - Overriding explicit user-provided colors with defaults
+- Black, near-black, navy, charcoal, or radial dark gradients as the default page, workspace, diagram, or SVG background
+- Inferring dark mode from technical, cloud, data platform, cyber, pipeline, command center, monitoring, operations, or executive dashboard language unless the user explicitly asks for dark, night, terminal, neon, cyber, or blueprint styling
 - Neon palettes
 - Decorative gradients as the main visual language
 - Overly rounded cards
 - Excessive shadows
 - One-color themes where everything is a variation of the same hue, unless the user explicitly asks for monochrome
+
+If a dark theme is explicitly requested, still keep labels high-contrast and avoid letting saturated primary or accent colors dominate every surface.
 
 ## Input Options
 
@@ -109,7 +115,7 @@ const config = {
 };
 ```
 
-When no option is supplied, choose conservative defaults that fit the content. Do not make the generated diagram depend on one fixed color palette, one fixed orientation, or one fixed alignment model.
+When no option is supplied, choose conservative defaults that fit the content while keeping the page, diagram canvas, component surfaces, and primary text on the light theme tokens above. Do not vary into a dark theme unless the user explicitly requests it.
 
 ## Diagram Mode
 
