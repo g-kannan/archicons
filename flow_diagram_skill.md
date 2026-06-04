@@ -18,9 +18,10 @@ Generate one complete `.html` file using only:
 Do not use:
 - Mermaid
 - Canvas
-- External JavaScript libraries, except the approved export libraries when export is requested
+- External JavaScript libraries
 - External CSS frameworks
 - External SVG `<image href="...">` references
+- External icon registries, CDNs, image URLs, fonts, or stylesheets
 
 All diagram visuals, components, process steps, decision points, connectors, arrows, and flow effects must be implemented with inline SVG.
 
@@ -80,7 +81,7 @@ Supported input-driven options:
 - `annotations`: callouts, notes, risks, assumptions, metrics, ownership, SLA, controls, or numbered markers
 - `connectionStyle`: curved, orthogonal, straight, dashed, batch, stream, control, exception, or feedback
 - `detailsPanel`: right, left, bottom, collapsible, or hidden when the user requests static output
-- `export`: none, copy, PNG, PDF, or all
+- `export`: none or SVG
 - `animation`: on, off, reduced, or active-path-only
 
 Recommended configuration shape:
@@ -103,7 +104,7 @@ const config = {
   annotations: "callouts",
   connectionStyle: "curved",
   detailsPanel: "right",
-  export: "all",
+  export: "SVG",
   animation: "active-path-only"
 };
 ```
@@ -253,9 +254,9 @@ Recommended decision node as rounded rectangle:
 
 ## Icons
 
-Use simple inline SVG placeholder marks when the request does not specify real platform icons.
+Use simple inline SVG marks for all icons. Icons must be drawn directly in the generated SVG or embedded as inline SVG markup in the same HTML file.
 
-Placeholder icons should be abstract and neutral:
+Icons should be abstract and neutral:
 - Input arrows
 - Database cylinders
 - Gear outlines
@@ -263,44 +264,24 @@ Placeholder icons should be abstract and neutral:
 - Document shapes
 - Chart marks
 
-When the user requests cloud, platform, database, product, or service icons, prefer existing icons from the Archicons registry:
-
-```text
-https://archicons.oltpdba.workers.dev/registry.json
-```
-
-Use the registry to search by `id`, `name`, `provider`, or `category`. Each registry entry includes a hosted SVG URL in the `url` field.
-
-Do not reference registry icons with external SVG `<image href="...">` tags in generated diagrams. Fetch or read the SVG source and paste the SVG markup inline so the diagram remains self-contained and export-safe.
-
-Example registry entry:
-
-```json
-{
-  "id": "azure.azure-sql",
-  "name": "Azure SQL",
-  "provider": "Microsoft Azure",
-  "category": "azure",
-  "path": "icons/azure/azure-sql.svg",
-  "url": "https://archicons.oltpdba.workers.dev/icons/azure/azure-sql.svg"
-}
-```
-
-Wrong:
+Do not use external platform, cloud, product, or service icon references. Do not fetch icon registries, hotlink hosted SVGs, or reference local files outside the generated HTML.
 
 ```html
-<image href="https://archicons.oltpdba.workers.dev/icons/aws/aws-glue.svg" x="18" y="16" width="28" height="28"></image>
+<!-- Wrong: external image reference -->
+<image href="external-icon.svg" x="18" y="16" width="28" height="28"></image>
 ```
 
-Right:
+Use inline icon geometry instead:
 
 ```html
-<svg x="18" y="16" width="28" height="28" viewBox="0 0 80 80" aria-label="AWS Glue">
-  <!-- Paste the real registry SVG paths/shapes here. -->
+<svg x="18" y="16" width="28" height="28" viewBox="0 0 28 28" aria-label="Database">
+  <ellipse cx="14" cy="7" rx="9" ry="4"></ellipse>
+  <path d="M5 7v12c0 2.2 4 4 9 4s9-1.8 9-4V7"></path>
+  <path d="M5 13c0 2.2 4 4 9 4s9-1.8 9-4"></path>
 </svg>
 ```
 
-If no matching icon exists in the registry, use a neutral inline SVG placeholder icon. Do not invent custom product logos.
+If the user asks for brand or product-specific icons, use neutral inline SVG symbols with text labels rather than recreating logos or relying on external assets.
 
 ## Connections
 
@@ -561,82 +542,65 @@ Adjust `--diagram-min-width` from the chosen orientation, density, and node coun
 
 ## Export Options
 
-Export is optional unless the user asks for copy, PNG, PDF, export, download, sharing, or presentation-ready output.
+Export is optional unless the user asks for SVG export, download, sharing, or presentation-ready output.
 
-When export is requested, include a built-in export toolbar and the two approved CDN scripts. This is the only allowed external JavaScript exception for this skill.
+When export is requested, include only a built-in `Download SVG` control implemented with vanilla JavaScript. Do not include PNG, PDF, copy-to-clipboard, raster capture, print export, CDN scripts, or external libraries.
 
-Every export-enabled diagram must ship with a single unobtrusive `...` toggle in the header. Clicking it reveals three buttons:
-- Copy: high-DPI PNG copied to clipboard, using scale `2`
-- PNG: high-DPI PNG download
-- PDF: PNG embedded in a one-page PDF using jsPDF
+Every export-enabled diagram must ship with a single unobtrusive `Download SVG` button in the header.
 
-The toolbar must be collapsed by default so it does not clutter the diagram.
-
-Use the same html2canvas capture for Copy, PNG, and PDF:
-- Capture the rendered diagram/report container with 32px padding
-- Exclude the toolbar from capture
-- Use `getBoundingClientRect()` to capture a precise rectangle
-- Use `scale: 2` by default
-- Use `useCORS: true` for any remaining non-SVG CDN assets
+The export should serialize the primary diagram `<svg>` element, inject required computed styles or include the internal `<style>` definitions needed by the SVG, create a Blob with MIME type `image/svg+xml;charset=utf-8`, and trigger a download through an object URL.
 
 Required export-enabled HTML:
-- Two pinned CDN scripts in `<head>` with SRI and `crossorigin="anonymous"`
 - `id="report-container"` on the outermost `.container` element that should be captured
-- `.toolbar` markup with `.toolbar-actions` collapsed by default
-- `.toolbar-toggle` for the `...` button
+- `id="diagram-svg"` on the primary SVG element
+- `.toolbar` markup with a `Download SVG` button
 - `.toolbar` CSS
 - `@media print { .toolbar { display: none !important; } }`
-- `copyAsImage()`, `downloadPNG()`, and `downloadPDF()` before `</body>`
-
-Approved scripts:
-
-```html
-<script
-  src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
-  integrity="sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H"
-  crossorigin="anonymous"></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"
-  integrity="sha384-en/ztfPSRkGfME4KIm05joYXynqzUgbsG5nMrj/xEFAHXkeZfO3yMK8QQ+mP7p1/"
-  crossorigin="anonymous"></script>
-```
-
-Do not modify the SRI hashes. If a script version changes, compute and use the correct new hash.
+- `downloadSVG()` before `</body>`
 
 Export caveats:
-- Clipboard API needs a user gesture and a secure context such as HTTPS, localhost, or a browser that allows clipboard access for local files.
-- SVG `<foreignObject>` renders inconsistently in html2canvas. Use plain SVG shapes and `<text>`.
-- External SVG files referenced through `<image href="...">` can export as broken images. Use inline SVG markup instead.
-- Archicons SVG URLs may not include browser CORS headers, so do not rely on `useCORS` for Archicons export.
-- Bump html2canvas `scale` to `3` or `4` only when the user explicitly asks for higher resolution.
+- SVG `<foreignObject>` can break portability. Use plain SVG shapes and `<text>`.
+- External SVG files referenced through `<image href="...">` can export as broken images. Do not use them.
+- External fonts, stylesheets, images, scripts, or symbol sprites can make the downloaded SVG incomplete. Keep all export-relevant styling and geometry inline or embedded in the generated file.
+- Include `xmlns="http://www.w3.org/2000/svg"` on the exported SVG.
 
-Recommended capture helper:
+Recommended export helper:
 
 ```js
-async function captureReport() {
-  const target = document.getElementById("report-container");
-  const rect = target.getBoundingClientRect();
-  const padding = 32;
+function downloadSVG() {
+  const svg = document.getElementById("diagram-svg");
+  const clone = svg.cloneNode(true);
+  clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
 
-  return html2canvas(document.body, {
-    x: rect.left + window.scrollX - padding,
-    y: rect.top + window.scrollY - padding,
-    width: rect.width + padding * 2,
-    height: rect.height + padding * 2,
-    scale: 2,
-    backgroundColor: getComputedStyle(document.documentElement).getPropertyValue("--page-bg").trim() || "#F7F8FC",
-    useCORS: true,
-    ignoreElements: element => element.closest && element.closest(".toolbar")
-  });
+  const style = document.createElementNS("http://www.w3.org/2000/svg", "style");
+  style.textContent = `
+    .node-card { fill: #fff; stroke: #DDE2EB; }
+    .node-title { fill: #111827; font: 700 14px Arial, sans-serif; }
+    .node-desc { fill: #5B6170; font: 12px Arial, sans-serif; }
+    .flow-line { fill: none; stroke: #AAB4C3; stroke-width: 2; }
+    .flow-line-active { fill: none; stroke: #0F766E; stroke-width: 3; stroke-dasharray: 10 12; }
+  `;
+  clone.insertBefore(style, clone.firstChild);
+
+  const source = new XMLSerializer().serializeToString(clone);
+  const blob = new Blob([source], { type: "image/svg+xml;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "flow-diagram.svg";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
 }
 ```
 
 Export preflight before final output:
-- Search the generated HTML for external icon references: `<image`, `href="https://archicons`, and `xlink:href="https://archicons`
-- If any are present, replace them with inline SVG markup
+- Search the generated HTML for external references: `<image`, `href="http`, `src="http`, `xlink:href="http`, `<script src=`, `<link`, `@import`, and `url(http`
+- If any are present, replace them with inline HTML, CSS, SVG, or vanilla JavaScript
 - For export-enabled diagrams, `document.querySelectorAll("svg image").length` should be `0`
-- Confirm the only external scripts are the approved html2canvas and jsPDF CDN scripts
-- Confirm there are no external stylesheets
+- Confirm there are no external scripts or stylesheets
+- Confirm the only export control is `Download SVG`
 
 ## Output Contract
 
@@ -647,7 +611,8 @@ The generated HTML must:
 - Open directly in a browser
 - Contain no Mermaid
 - Contain no Canvas
-- Contain no external libraries except the two approved export scripts when export is requested
+- Contain no external libraries
+- Contain no external references
 - Use inline SVG for all diagram visuals
 - Include animated arrows between components
 - Include hover effects
@@ -664,7 +629,6 @@ Before finalizing, inspect the HTML for:
 - `<image`
 
 Also inspect external scripts:
-- If export is not requested, remove all `<script src=...>` tags.
-- If export is requested, keep only the approved html2canvas and jsPDF scripts with the required SRI hashes.
+- Remove all `<script src=...>` tags.
 
 If any forbidden element exists, remove it or replace it with inline HTML, CSS, SVG, or vanilla JavaScript.
